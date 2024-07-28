@@ -33,7 +33,7 @@ body {
 }
 .app-title span {
   display: block;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: var(--primary);
 }
 .content {
@@ -47,22 +47,26 @@ body {
 .field{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .form label {
   color: var(--black);
 }
 .form select {
-  background-color: #ECEBEB;
+  background-color: #e0d9d9;
   border: none;
-  padding: 1rem;
+  padding: .7rem;
+  font-size: .9rem;
   border-radius: .2rem;
+
 }
 .form [type="submit"] {
   background: var(--primary);
   color: var(--black);
   border: none;
-  padding: 1rem;
+  padding: .8rem;
   cursor: pointer;
   font-weight: 900;
   text-transform: uppercase;
