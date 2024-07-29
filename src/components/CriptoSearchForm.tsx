@@ -2,7 +2,7 @@ import { useCryptoStore } from "../store"
 import { currencies } from "../data"
 import { useState } from "react"
 import { Pair } from "../types"
-import ErrroMessage from "./ErrroMessage"
+import ErrroMessage from "./ErrorMessage"
 
 export default function CriptoSearchForm() {
     const { cryptocurrencies, fetchData } = useCryptoStore()

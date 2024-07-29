@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export default function ErrroMessage({children} : {children: ReactNode}) {
+export default function ErrorMessage({children} : {children: ReactNode}) {
   return (
     <div>
         {children}
