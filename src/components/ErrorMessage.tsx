@@ -1,9 +1,10 @@
 import { ReactNode } from "react";
+import '../index.css'
 
 export default function ErrorMessage({children} : {children: ReactNode}) {
   return (
-    <div>
+    <p className="error-message">
         {children}
-    </div>
+    </p>
   )
 }

@@ -24,12 +24,15 @@ body {
   max-width: 40rem;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 .app-title {
   font-size: 3.8rem;
   margin-top: 5rem;
   color: var(--white);
   line-height: .8;
+  
+  text-align: center;
 }
 .app-title span {
   display: block;
@@ -37,7 +40,7 @@ body {
   color: var(--primary);
 }
 .content {
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding: 2rem;
   background-color: var(--white);
   border-radius: 1rem;
@@ -76,4 +79,55 @@ body {
 }
 .form [type="submit"]:hover {
   background: #0CB387;
+}
+.error-message{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background: red;
+  padding: .2rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.result-wrapper{
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.result-title{
+  text-align: center;
+}
+.result-wrapper h2{
+  margin-bottom: 1rem;
+}
+.result {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 1rem;
+}
+.result img {
+  width: 100%;
+}
+.result p {
+  margin: 0 0 1rem;
+}
+.result span {
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .result{
+    display: flex;
+    flex-direction: column;
+  }
+  .result img {
+    width: 10rem;
+  }
+  .app-title {
+    font-size: 2.5rem;
+  }
+  .app-title span {
+    font-size: 2.8rem;
+  }
 }
